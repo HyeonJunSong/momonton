@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MONMONTON</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/clock.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/todo.css" />
+    <link rel="stylesheet" href="css/weather.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grandstander:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="clockContainer"></div>
+    <div id="userContainer" class="userMode0">
+      <div id="mode0">
+        <img src="assets/icons/user.svg" />
+      </div>
+
+      <div id="mode1" class="hide">
+        <img src="assets/icons/user.svg" />
+        <form>
+          <div class="title">Sign In</div>
+          <input class="username" placeholder="username" required />
+          <input
+            type="password"
+            class="password"
+            placeholder="password"
+            required
+          />
+          <input type="submit" class="hide" />
+        </form>
+      </div>
+
+      <div id="mode2" class="hide">Welcome, HyeonJunSong!</div>
+    </div>
+    <div id="todoContainer">
+      <div class="titleBox">
+        <div class="title">todo</div>
+        <div class="divider"></div>
+      </div>
+
+      <div class="contentBox">
+        <div class="divider_hide"></div>
+        <form class="todoBox">
+          <input class="todo" required placeholder="new todo!" />
+        </form>
+        <div class="divider"></div>
+      </div>
+    </div>
+
+    <div id="weatherContainer">
+      <img />
+      <div class="text"></div>
+    </div>
+
+    <!-- js -->
+    <script src="js/background.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
