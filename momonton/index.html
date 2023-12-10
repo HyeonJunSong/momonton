@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/clock.css" />
     <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/todo.css" />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -41,10 +42,25 @@
 
       <div id="mode2" class="hide">Welcome, HyeonJunSong!</div>
     </div>
+    <div id="todoContainer">
+      <div class="titleBox">
+        <div class="title">todo</div>
+        <div class="divider"></div>
+      </div>
+
+      <div class="contentBox">
+        <div class="divider_hide"></div>
+        <form class="todoBox">
+          <input class="todo" required placeholder="new todo!" />
+        </form>
+        <div class="divider"></div>
+      </div>
+    </div>
 
     <!-- js -->
     <script src="js/background.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/login.js"></script>
+    <script src="js/todo.js"></script>
   </body>
 </html>
