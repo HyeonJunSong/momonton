@@ -7,6 +7,6 @@ const IMG_NUM = 10;
 
 function setRandomBackground() {
   const randomNum = Math.floor(Math.random() * IMG_NUM);
-  setBackground(`assets/imgs/${randomNum}.jpeg`);
+  setBackground(`assets/imgs/${randomNum}.png`);
 }
 setRandomBackground();
