@@ -1,0 +1,97 @@
+#todoContainer {
+  width: 201px;
+  height: 481px;
+
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8.7px);
+
+  position: absolute;
+  top: 63px;
+  right: 43px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#todoContainer .titleBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 175px;
+  height: 32px;
+
+  margin-top: 20px;
+}
+
+#todoContainer .titleBox .title {
+  color: #fff;
+  font-size: 30px;
+}
+
+#todoContainer .divider {
+  width: 175px;
+  height: 2px;
+  background-color: #fff;
+}
+
+#todoContainer .divider_hide {
+  background-color: transparent;
+}
+
+#todoContainer .contentBox {
+  width: 175px;
+  height: 40px;
+
+  /* transform: translateY(-2px); */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#todoContainer .contentBox .todoBox {
+  display: flex;
+}
+
+#todoContainer .contentBox .todoBox .check {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#todoContainer .contentBox .todoBox .todo {
+  width: 125px;
+  color: #fff;
+  font-size: 20px;
+}
+
+#todoContainer .contentBox input {
+  color: #fff;
+  font-size: 20px;
+  font-family: "Grandstander";
+
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+#todoContainer .contentBox input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  font-family: "Grandstander";
+  text-align: center;
+
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+#todoContainer .contentBox .todoBox .cancel {
+  margin-left: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,36 @@
+#weatherContainer {
+  width: 201px;
+  height: 201px;
+
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8.7px);
+
+  position: absolute;
+  top: 576px;
+  right: 43px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#weatherContainer img {
+  width: 150px;
+  height: 150px;
+  display: none;
+}
+#weatherContainer img[src] {
+  width: 150px;
+  height: 150px;
+  display: block;
+}
+
+#weatherContainer .text {
+  color: #fff;
+  font-family: Grandstander;
+  font-size: 20px;
+}

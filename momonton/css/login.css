@@ -1,0 +1,101 @@
+#userContainer {
+  position: absolute;
+  left: 26px;
+  top: 26px;
+
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8.7px);
+
+  transition: all 0.2s ease-out;
+}
+
+.userMode0 {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userMode1 {
+  width: 255px;
+  height: 148px;
+}
+
+.userMode2 {
+  height: 50px;
+}
+
+.hide {
+  display: none;
+}
+
+#mode0 img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#mode1 img {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+
+  cursor: pointer;
+}
+
+#mode1 form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+#mode1 form .title {
+  color: #fff;
+  font-size: 20px;
+
+  margin-bottom: 16px;
+}
+#mode1 form input {
+  width: 195px;
+  height: 32px;
+
+  padding: 0px 11px;
+
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  border: none;
+  outline: none;
+
+  color: rgba(0, 0, 0, 1);
+  font-family: Grandstander;
+  font-size: 14px;
+
+  margin-bottom: 10px;
+}
+
+#mode1 form input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Grandstander;
+  font-size: 14px;
+}
+
+#mode2 {
+  margin: 15px;
+
+  color: #fff;
+  font-family: Grandstander;
+  font-size: 20px;
+
+  cursor: pointer;
+}
