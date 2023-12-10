@@ -3,4 +3,10 @@ function setBackground(src) {
   bodyContainer.style.backgroundImage = `url(${src})`;
 }
 
-setBackground("assets/imgs/0.jpeg");
+const IMG_NUM = 10;
+
+function setRandomBackground() {
+  const randomNum = Math.floor(Math.random() * IMG_NUM);
+  setBackground(`assets/imgs/${randomNum}.jpeg`);
+}
+setRandomBackground();
